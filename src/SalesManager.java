@@ -15,9 +15,9 @@ public class SalesManager {
         return max;
     }
 
-    public int min() {
-        int min = sales[0];
-        for (int sale : sales) {
+    public long min() {
+        long min = sales[0];
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
@@ -25,9 +25,9 @@ public class SalesManager {
         return min;
     }
 
-    public int total() {
-        int total = 0;
-        int qTotal = 0;
+    public long total() {
+        long total = 0;
+        long qTotal = 0;
         for (int i=0; i < sales.length; i++) {
             if ((sales[i] != min()) & (sales[i] != max())) {
                 total += sales[i];
